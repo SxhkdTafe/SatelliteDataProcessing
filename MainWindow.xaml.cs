@@ -20,6 +20,38 @@ namespace SatelliteDataProcessing
         {
             InitializeComponent();
         }
+        private void BinRCA1Btn_Click(object sender, RoutedEventArgs e)
+        {
 
+        }
+        private void BinITA1Btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void SortSlctA1Btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void SortIsrtA1Btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void BinRCB2Btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void BinITB2Btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void SortSlctB2Btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void SortIsrtB2Btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
+    
 }

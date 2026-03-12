@@ -44,8 +44,8 @@
             <ListBox HorizontalAlignment="Left" Height="407" Margin="672,42,0,0" VerticalAlignment="Top" Width="115" d:ItemsSource="{d:SampleData ItemCount=5}" x:Name="SnsrA1LstBx_Copy"/>
             <Button Content="Load Sensor Data" HorizontalAlignment="Left" Height="20" Margin="60,79,0,0" VerticalAlignment="Top" Width="115" x:Name="LoadDataBtn"/>
             <ListBox x:Name="AllDtaListBox"  HorizontalAlignment="Left" Height="344" Margin="10,105,0,0" VerticalAlignment="Top" Width="215" d:ItemsSource="{d:SampleData ItemCount=5}"/>
-            <ScrollBar HorizontalAlignment="Left" Height="25" Margin="76,31,0,0" VerticalAlignment="Top" Width="18"/>
-            <ScrollBar HorizontalAlignment="Left" Height="26" Margin="157,30,0,0" VerticalAlignment="Top" Width="18"/>
+            <ScrollBar HorizontalAlignment="Left" Height="25" Margin="76,31,0,0" VerticalAlignment="Top" Width="18" x:Name="ScrllSig"/>
+            <ScrollBar HorizontalAlignment="Left" Height="26" Margin="157,30,0,0" VerticalAlignment="Top" Width="18" x:Name="ScrllMu"/>
             <TextBox HorizontalAlignment="Left" Height="24" Margin="33,31,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="43" x:Name="SigmaTxt" IsReadOnly="True"/>
             <TextBox HorizontalAlignment="Left" Height="24" Margin="114,31,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="43" x:Name="MuTxt" IsReadOnly="True"/>
         </Grid>
