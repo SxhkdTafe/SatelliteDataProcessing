@@ -38,6 +38,17 @@ namespace SatelliteDataLibrary
         }
         private T[] InsetionSort(T[] data)
         {
+            for (int i =0; i < data.Length;i ++)
+            {
+                T tmp = data[i];
+                int j = i - 1;
+                while (j >= 0 && data[j].CompareTo(tmp) < 0)
+                {
+                    data[j + 1] = data[j];
+                    j = j - 1;
+                }
+                data[j + 1] = tmp;
+            }
             return data;
         }
         public void SelectSort(SortType type)
