@@ -8,15 +8,15 @@ namespace SatelliteDataLibrary
 {
     public class SortingAlgorithms<T> where T : IComparable<T>
     {
-        private Func<T[], T[]> _sort;
+        private Func<LinkedList<T>, LinkedList<T>> _sort;
         public enum SortType
         {
             Selection,
             Insertion
         }
-        private T[] SelectionSort(T[] data)
+        private LinkedList<T> SelectionSort(LinkedList<T> data)
         {
-            int n  = data.GetLength(0);
+            int n  = data.Count;
             for (int i = 0; i < n - 1; i++)
             {
                 int min = i;
@@ -36,9 +36,9 @@ namespace SatelliteDataLibrary
             }
             return data;
         }
-        private T[] InsetionSort(T[] data)
+        private LinkedList<T> InsetionSort(LinkedList<T> data)
         {
-            for (int i =0; i < data.Length;i ++)
+            for (int i =0; i < data.Count;i ++)
             {
                 T tmp = data[i];
                 int j = i - 1;
@@ -47,7 +47,7 @@ namespace SatelliteDataLibrary
                     data[j + 1] = data[j];
                     j = j - 1;
                 }
-                data[j + 1] = tmp;
+                data[j + 1] = tmp; 
             }
             return data;
         }
