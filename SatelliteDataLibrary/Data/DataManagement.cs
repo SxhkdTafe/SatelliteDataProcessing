@@ -25,6 +25,8 @@ namespace SatelliteDataLibrary.Data
         public void LoadDataToList(int mu, int sig, Sensors type) 
         {
             int length = 400;
+            if (type == Sensors.SensorA) A.Clear();
+            if (type == Sensors.SensorB) B.Clear();
             for (int i = 0; i < length; i++)
             {
                 double value = type switch
@@ -35,27 +37,21 @@ namespace SatelliteDataLibrary.Data
                 };
 
                 if (type == Sensors.SensorA) A.AddLast(value);
-                if (type == Sensors.SensorB) B.AddLast(value);
+                else B.AddLast(value);
             }
         }
-        public List<string> ShowAllSensorData (int mu, int sig, Sensors type)
+        public List<double> ShowAllSensorData (Sensors type)
         {  
-            List<string> data = new List<string>();
-            if (A == null || A.First == null || B == null || B.First == null) return data;
-            var currentA = A.First;
-            var currentB = B.First;
-            for (int i = 0;i < 400 ;i++)
+            List<double> data = new List<double>();
+            var list = type == Sensors.SensorA ? A : B;
+
+            if (list == null || list.First == null)
+                return data;
+            var current = list.First;
+            while (current != null)
             {
-                if (type == Sensors.SensorA) 
-                {
-                    data.Add(currentA.Value.ToString());
-                    currentA = currentA.Next;
-                }
-                if (type == Sensors.SensorB)
-                {
-                    data.Add(currentB.Value.ToString()); ;
-                    currentB = currentB.Next;
-                }
+                data.Add(current.Value);
+                current = current.Next;
             }
             return data;
         }
@@ -65,7 +61,7 @@ namespace SatelliteDataLibrary.Data
             {
                 return -1;
             }
-            return list.Count;
+            return list?.Count ?? 0;
         }
     }
 }
