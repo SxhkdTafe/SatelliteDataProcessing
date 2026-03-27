@@ -25,7 +25,7 @@
             <TextBox HorizontalAlignment="Left" Height="20" Margin="278,429,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="103" x:Name="SortInrtA1Txt" RenderTransformOrigin="0.349,-0.442"/>
             <Label Content="Insertion Sort" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="103" Margin="278,366,0,0"/>
             <Button Content="Sort        " HorizontalAlignment="Left" Height="20" Margin="279,398,0,0" VerticalAlignment="Top" Width="102" x:Name="SortIsrtA1Btn" Click="SortIsrtA1Btn_Click"/>
-            <ListBox HorizontalAlignment="Left" Height="407" Margin="410,42,0,0" VerticalAlignment="Top" Width="115" d:ItemsSource="{d:SampleData ItemCount=5}" x:Name="SnsrA1LstBx"/>
+            <ListView HorizontalAlignment="Left" Height="407" Margin="410,42,0,0" VerticalAlignment="Top" Width="115" d:ItemsSource="{d:SampleData ItemCount=5}" x:Name="SnsrA1LstView"/>
             <TextBox HorizontalAlignment="Left" Height="20" Margin="540,105,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="103" x:Name="BinSearchIT2BTxt" RenderTransformOrigin="0.349,-0.442"/>
             <Label Content="Binary Search Interitive" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="144" Margin="540,42,0,0"/>
             <Label Content="Search Target                    " HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="83" Margin="536,232,0,0" RenderTransformOrigin="4.297,1.573" />
@@ -41,9 +41,9 @@
             <TextBox HorizontalAlignment="Left" Height="20" Margin="540,429,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="103" x:Name="SortInrtB2Txt" RenderTransformOrigin="0.349,-0.442"/>
             <Label Content="Insertion Sort" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="103" Margin="540,366,0,0"/>
             <Button Content="Sort        " HorizontalAlignment="Left" Height="20" Margin="541,398,0,0" VerticalAlignment="Top" Width="102" x:Name="SortIsrtB2Btn" Click="SortIsrtB2Btn_Click"/>
-            <ListBox HorizontalAlignment="Left" Height="407" Margin="672,42,0,0" VerticalAlignment="Top" Width="115" d:ItemsSource="{d:SampleData ItemCount=5}" x:Name="SnsrA1LstBx_Copy"/>
-            <Button Content="Load Sensor Data" HorizontalAlignment="Left" Height="20" Margin="60,79,0,0" VerticalAlignment="Top" Width="115" x:Name="LoadDataBtn"/>
-            <ListBox x:Name="AllDtaListBox"  HorizontalAlignment="Left" Height="344" Margin="10,105,0,0" VerticalAlignment="Top" Width="215" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+            <ListView HorizontalAlignment="Left" Height="407" Margin="672,42,0,0" VerticalAlignment="Top" Width="115" d:ItemsSource="{d:SampleData ItemCount=5}" x:Name="SnsrB1LstView"/>
+            <Button Content="Load Sensor Data" HorizontalAlignment="Left" Height="20" Margin="60,79,0,0" VerticalAlignment="Top" Width="115" x:Name="LoadDataBtn" Click="LoadDataBtn_Click"/>
+            <ListView x:Name="AllDtaListBox"  HorizontalAlignment="Left" Height="344" Margin="10,105,0,0" VerticalAlignment="Top" Width="215" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="AllDtaListBox_SelectionChanged"/>
             <ScrollBar HorizontalAlignment="Left" Height="25" Margin="76,31,0,0" VerticalAlignment="Top" Width="18" x:Name="ScrllSig"/>
             <ScrollBar HorizontalAlignment="Left" Height="26" Margin="157,30,0,0" VerticalAlignment="Top" Width="18" x:Name="ScrllMu"/>
             <TextBox HorizontalAlignment="Left" Height="24" Margin="33,31,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="43" x:Name="SigmaTxt" IsReadOnly="True"/>

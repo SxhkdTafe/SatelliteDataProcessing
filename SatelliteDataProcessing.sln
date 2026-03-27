@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.14.36811.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SatelliteDataProcessing", "SatelliteDataProcessing.csproj", "{7DCD56AA-D4AD-406E-96E5-2211BD0C8190}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B1A7BC7D-26A0-4FBF-8001-F9C627485339} = {B1A7BC7D-26A0-4FBF-8001-F9C627485339}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SatelliteDataLibrary", "SatelliteDataLibrary\SatelliteDataLibrary.csproj", "{B1A7BC7D-26A0-4FBF-8001-F9C627485339}"
 EndProject
