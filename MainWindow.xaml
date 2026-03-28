@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Viewbox Stretch="Uniform">
         <Grid Height="476" Width="820">
-            <TextBox HorizontalAlignment="Left" Height="20" Margin="278,105,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="103" x:Name="BinSearchIT1ATxt" RenderTransformOrigin="0.349,-0.442"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="330,105,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="51" x:Name="BinSearchIT1ATxt" RenderTransformOrigin="0.349,-0.442" IsReadOnly="True"/>
             <Label Content="Binary Search Interitive" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="144" Margin="278,42,0,0"/>
             <Label Content="Search Target
                    " HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="83" Margin="274,232,0,0" RenderTransformOrigin="4.297,1.573" />
@@ -16,38 +16,60 @@
             <Label Content="SENSOR A" HorizontalAlignment="Left" Height="28" Margin="314,10,0,0" VerticalAlignment="Top" Width="96"/>
             <Button Content="Search
         " HorizontalAlignment="Left" Height="20" Margin="279,74,0,0" VerticalAlignment="Top" Width="102" x:Name="BinITA1Btn" Click="BinITA1Btn_Click"/>
-            <TextBox HorizontalAlignment="Left" Height="20" Margin="278,207,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="103" x:Name="BinSearchRC1ATxt" RenderTransformOrigin="0.349,-0.442"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="330,207,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="51" x:Name="BinSearchRC1ATxt" RenderTransformOrigin="0.349,-0.442" IsReadOnly="True"/>
             <Label Content="Binary Search Recursive" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="144" Margin="278,144,0,0"/>
             <Button Content="Search         " HorizontalAlignment="Left" Height="20" Margin="279,176,0,0" VerticalAlignment="Top" Width="102" x:Name="BinRCA1Btn" Click="BinRCA1Btn_Click"/>
-            <TextBox HorizontalAlignment="Left" Height="20" Margin="278,327,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="103" x:Name="SortSlctA1Txt" RenderTransformOrigin="0.349,-0.442"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="330,327,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="51" x:Name="SortSlctA1Txt" RenderTransformOrigin="0.349,-0.442" IsReadOnly="True"/>
             <Label Content="Selection Sort" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="103" Margin="278,264,0,0"/>
             <Button Content="Sort        " HorizontalAlignment="Left" Height="20" Margin="279,296,0,0" VerticalAlignment="Top" Width="102" x:Name="SortSlctA1Btn" Click="SortSlctA1Btn_Click"/>
-            <TextBox HorizontalAlignment="Left" Height="20" Margin="278,429,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="103" x:Name="SortInrtA1Txt" RenderTransformOrigin="0.349,-0.442"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="330,429,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="51" x:Name="SortInrtA1Txt" RenderTransformOrigin="0.349,-0.442" IsReadOnly="True"/>
             <Label Content="Insertion Sort" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="103" Margin="278,366,0,0"/>
             <Button Content="Sort        " HorizontalAlignment="Left" Height="20" Margin="279,398,0,0" VerticalAlignment="Top" Width="102" x:Name="SortIsrtA1Btn" Click="SortIsrtA1Btn_Click"/>
-            <ListBox HorizontalAlignment="Left" Height="407" Margin="410,42,0,0" VerticalAlignment="Top" Width="115" d:ItemsSource="{d:SampleData ItemCount=5}" x:Name="SnsrA1LstBx"/>
-            <TextBox HorizontalAlignment="Left" Height="20" Margin="540,105,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="103" x:Name="BinSearchIT2BTxt" RenderTransformOrigin="0.349,-0.442"/>
+            <ListBox HorizontalAlignment="Left" Height="407" Margin="410,42,0,0" VerticalAlignment="Top" Width="115"  x:Name="SnsrA1LstView"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="587,105,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" x:Name="BinSearchIT2BTxt" RenderTransformOrigin="0.349,-0.442" IsReadOnly="True" />
             <Label Content="Binary Search Interitive" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="144" Margin="540,42,0,0"/>
             <Label Content="Search Target                    " HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="83" Margin="536,232,0,0" RenderTransformOrigin="4.297,1.573" />
-            <TextBox HorizontalAlignment="Left" Height="20" Margin="619,240,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="24"  x:Name="SearchTrgtBTxt_Copy" RenderTransformOrigin="6.221,1.92"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="619,240,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="24"  x:Name="SearchTrgtBTxt" RenderTransformOrigin="6.221,1.92"/>
             <Label Content="SENSOR B" HorizontalAlignment="Left" Height="28" Margin="576,10,0,0" VerticalAlignment="Top" Width="96"/>
             <Button Content="Search         " HorizontalAlignment="Left" Height="20" Margin="541,74,0,0" VerticalAlignment="Top" Width="102" x:Name="BinITB2Btn" Click="BinITB2Btn_Click"/>
-            <TextBox HorizontalAlignment="Left" Height="20" Margin="540,207,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="103" x:Name="BinSearchRC2BTxt" RenderTransformOrigin="0.349,-0.442"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="587,207,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" x:Name="BinSearchRC2BTxt" RenderTransformOrigin="0.349,-0.442" IsReadOnly="True"/>
             <Label Content="Binary Search Recursive" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="144" Margin="540,144,0,0"/>
             <Button Content="Search         " HorizontalAlignment="Left" Height="20" Margin="541,176,0,0" VerticalAlignment="Top" Width="102" x:Name="BinRCB2Btn" Click="BinRCB2Btn_Click"/>
-            <TextBox HorizontalAlignment="Left" Height="20" Margin="540,327,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="103" x:Name="SortSlctB2Txt" RenderTransformOrigin="0.349,-0.442"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="587,327,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" x:Name="SortSlctB2Txt" RenderTransformOrigin="0.349,-0.442" IsReadOnly="True"/>
             <Label Content="Selection Sort" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="103" Margin="540,264,0,0"/>
             <Button Content="Sort        " HorizontalAlignment="Left" Height="20" Margin="541,296,0,0" VerticalAlignment="Top" Width="102" x:Name="SortSlctB2Btn" Click="SortSlctB2Btn_Click"/>
-            <TextBox HorizontalAlignment="Left" Height="20" Margin="540,429,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="103" x:Name="SortInrtB2Txt" RenderTransformOrigin="0.349,-0.442"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="587,429,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" x:Name="SortInrtB2Txt" RenderTransformOrigin="0.349,-0.442" IsReadOnly="True" />
             <Label Content="Insertion Sort" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="103" Margin="540,366,0,0"/>
             <Button Content="Sort        " HorizontalAlignment="Left" Height="20" Margin="541,398,0,0" VerticalAlignment="Top" Width="102" x:Name="SortIsrtB2Btn" Click="SortIsrtB2Btn_Click"/>
-            <ListBox HorizontalAlignment="Left" Height="407" Margin="672,42,0,0" VerticalAlignment="Top" Width="115" d:ItemsSource="{d:SampleData ItemCount=5}" x:Name="SnsrA1LstBx_Copy"/>
-            <Button Content="Load Sensor Data" HorizontalAlignment="Left" Height="20" Margin="60,79,0,0" VerticalAlignment="Top" Width="115" x:Name="LoadDataBtn"/>
-            <ListBox x:Name="AllDtaListBox"  HorizontalAlignment="Left" Height="344" Margin="10,105,0,0" VerticalAlignment="Top" Width="215" d:ItemsSource="{d:SampleData ItemCount=5}"/>
-            <ScrollBar HorizontalAlignment="Left" Height="25" Margin="76,31,0,0" VerticalAlignment="Top" Width="18" x:Name="ScrllSig"/>
-            <ScrollBar HorizontalAlignment="Left" Height="26" Margin="157,30,0,0" VerticalAlignment="Top" Width="18" x:Name="ScrllMu"/>
-            <TextBox HorizontalAlignment="Left" Height="24" Margin="33,31,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="43" x:Name="SigmaTxt" IsReadOnly="True"/>
-            <TextBox HorizontalAlignment="Left" Height="24" Margin="114,31,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="43" x:Name="MuTxt" IsReadOnly="True"/>
+            <ListBox HorizontalAlignment="Left" Height="407" Margin="672,42,0,0" VerticalAlignment="Top" Width="115"  x:Name="SnsrB1LstView"/>
+            <Button Content="Load Sensor Data" HorizontalAlignment="Left" Height="20" Margin="60,79,0,0" VerticalAlignment="Top" Width="115" x:Name="LoadDataBtn" Click="LoadDataBtn_Click"/>
+            <ListView x:Name="AllDtaListBox"  HorizontalAlignment="Left" Height="344" Margin="10,105,0,0" VerticalAlignment="Top" Width="215">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="A" DisplayMemberBinding="{Binding AData}" Width="105"/>
+                        <GridViewColumn Header="B" DisplayMemberBinding="{Binding BData}" Width="105"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <TextBox HorizontalAlignment="Left" Height="28" Margin="33,28,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="43" x:Name="SigmaTxt" IsReadOnly="True" FontSize="18"/>
+            <TextBox HorizontalAlignment="Left" Height="28" Margin="114,28,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="43" x:Name="MuTxt" IsReadOnly="True" FontSize="18"/>
+            <Button Content="^" HorizontalAlignment="Left" Height="14" Margin="76,28,0,0" VerticalAlignment="Top" Width="16" x:Name="sigincr" Click="sigincr_Click"/>
+            <Button Content="˅" HorizontalAlignment="Left" Height="14" Margin="76,42,0,0" VerticalAlignment="Top" Width="16" FontSize="10" x:Name="sigdecr" Click="sigdecr_Click"/>
+            <Label Content="Sigma" HorizontalAlignment="Left" Height="27" Margin="33,6,0,0" VerticalAlignment="Top" Width="59"/>
+            <Label Content="Mu
+                   " HorizontalAlignment="Left" Height="27" Margin="114,4,0,0" VerticalAlignment="Top" Width="59"/>
+            <Button Content="^" HorizontalAlignment="Left" Height="14" Margin="157,28,0,0" VerticalAlignment="Top" Width="16" x:Name="muincr" Click="muincr_Click"/>
+            <Button Content="˅" HorizontalAlignment="Left" Height="14" Margin="157,42,0,0" VerticalAlignment="Top" Width="16" FontSize="10" x:Name="mudecr" Click="mudecr_Click"/>
+            <Label Content="Time
+                   
+                   " HorizontalAlignment="Left" Height="25" Margin="279,103,0,0" VerticalAlignment="Top" Width="51" RenderTransformOrigin="0.475,0.375"/>
+            <Label Content="Time" HorizontalAlignment="Left" Height="26" Margin="279,204,0,0" VerticalAlignment="Top" Width="46"/>
+            <Label Content="Time" HorizontalAlignment="Left" Height="26" Margin="279,324,0,0" VerticalAlignment="Top" Width="46"/>
+            <Label Content="Time" HorizontalAlignment="Left" Height="26" Margin="278,426,0,0" VerticalAlignment="Top" Width="46"/>
+            <Label Content="Time                                        " HorizontalAlignment="Left" Height="25" Margin="542,103,0,0" VerticalAlignment="Top" Width="51" RenderTransformOrigin="0.475,0.375"/>
+            <Label Content="Time" HorizontalAlignment="Left" Height="26" Margin="542,204,0,0" VerticalAlignment="Top" Width="46"/>
+            <Label Content="Time" HorizontalAlignment="Left" Height="26" Margin="542,324,0,0" VerticalAlignment="Top" Width="46"/>
+            <Label Content="Time" HorizontalAlignment="Left" Height="26" Margin="541,426,0,0" VerticalAlignment="Top" Width="46"/>
         </Grid>
     </Viewbox>
 </Window>
