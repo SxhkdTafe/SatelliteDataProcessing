@@ -8,13 +8,18 @@ namespace SatelliteDataLibrary
 {
     public class SortingAlgorithms<T> where T : IComparable<T>
     {
-        public LinkedList<T> Sorted {  get; set; }
-        private Func<LinkedList<T>, bool> _sort;
+        public LinkedList<T> Sorted {  get; private set; }
+        private Func<LinkedList<T>, bool>? _sort;
+        public SortingAlgorithms()
+        {
+            Sorted = new LinkedList<T>();
+        }
         public enum SortType
         {
             Selection,
             Insertion
         }
+
         private bool SelectionSort(LinkedList<T> data)
         {
             if (data == null || data.First == null) return false;
@@ -39,21 +44,20 @@ namespace SatelliteDataLibrary
                 }
                 outer = outer.Next;
             }
-            Sorted.Clear();
-            Sorted = outer.List; 
+            Sorted = data; 
             return true;
 
         }
         private bool InsetionSort(LinkedList<T> data)
         {
-            if (data.First == null || data.First == null) return false;
+            if (data == null || data.First == null) return false;
 
             var current = data.First.Next;
 
             while (current != null)
             {
                 var next = current.Next; 
-
+                var value = current.Value;
                 var search = current.Previous;
 
                 while (search != null && search.Value.CompareTo(current.Value) > 0)
@@ -61,25 +65,28 @@ namespace SatelliteDataLibrary
                     search = search.Previous;
                 }
 
-                data.Remove(current);
-
-                if (search == null)
+                
+                if (search != current.Previous)
                 {
-                    data.AddFirst(current);
-                }
-                else
-                {
+                    data.Remove(current);
+                    if (search == null)
+                    {
+                        data.AddFirst(value);
+                    }
+                    else
+                    {
 
-                    data.AddAfter(search, current);
+                        data.AddAfter(search, value);
+                    }
                 }
+  
 
                 current = next;
             }
-            Sorted.Clear();
-            Sorted = current.List;
+            Sorted = data;
             return true;
         }
-        public void SelectSort(SortType type)
+        public bool DataSort(LinkedList<T> data, SortType type)
         {
             _sort = type switch
             {
@@ -87,9 +94,6 @@ namespace SatelliteDataLibrary
                 SortType.Insertion => InsetionSort,
                 _ => throw new ArgumentException()
             };
-        }
-        public bool DataSearch(LinkedList<T> data)
-        {
             return _sort(data);
         }
     }

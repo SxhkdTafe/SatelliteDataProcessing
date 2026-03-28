@@ -9,7 +9,7 @@ namespace SatelliteDataLibrary.Controllers
 {
     public class DisplayFuncController
     {
-        private DataManagement Basic = new DataManagement();
+         internal DataManagement Basic = new DataManagement();
 
         public (List<string> A, List<string> B) DataHandler(int sig, int mu)
         {
