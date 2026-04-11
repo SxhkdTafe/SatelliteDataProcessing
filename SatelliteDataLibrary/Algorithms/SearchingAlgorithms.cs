@@ -36,9 +36,10 @@ namespace SatelliteDataLibrary
 
             int midIndex = (minIndex + maxIndex) / 2;
             var current = data.First;
+            
             for (int i = 0; i < midIndex; i++)
                 current = current.Next;
-
+            if (current == null) return _results;
             int cmp = ComparewithTol(current.Value, searchValue);
 
             if (cmp == 0)
@@ -74,6 +75,7 @@ namespace SatelliteDataLibrary
                 {
                     currentVal = currentVal.Next;
                 }
+                if (currentVal == null) return _results;
                 int cmp = ComparewithTol(currentVal.Value, UsrInput);
                 if (cmp == 0)
                 {
